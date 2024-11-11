@@ -1,0 +1,103 @@
+#title {
+  position: absolute;
+  top: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 10px;
+}
+#title .lettersTitle {
+  position: relative;
+  font-size: 3rem;
+  transform-origin: bottom center;
+  color: #75fa53;
+  width: 50px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Neue Montreal Bold';
+}
+#title .lettersTitle:nth-child(1) {
+  transform: rotate(50deg) translateY(-95px);
+  margin-right: 23px;
+  opacity: 0;
+  animation: revealLetter1 1s forwards 2.1s;
+}
+@keyframes revealLetter1 {
+  0% {
+    opacity: 1;
+    transform: rotate(50deg) translateY(-95px);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(50deg) translateY(-25px);
+  }
+}
+#title .lettersTitle:nth-child(2) {
+  transform: rotate(23deg) translateY(-40px);
+  opacity: 0;
+  animation: revealLetter2 1s forwards 2.2s;
+}
+@keyframes revealLetter2 {
+  0% {
+    opacity: 1;
+    transform: rotate(23deg) translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(23deg) translateY(30px);
+  }
+}
+#title .lettersTitle:nth-child(3) {
+  transform: translateY(-20px);
+  font-size: 5rem;
+  font-weight: 900;
+  width: 20px;
+  height: 60px;
+  opacity: 0;
+  animation: revealLetter3 1s forwards 2.6s;
+}
+@keyframes revealLetter3 {
+  0% {
+    opacity: 1;
+    transform: rotate(0deg) translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(0deg) translateY(50px);
+  }
+}
+#title .lettersTitle:nth-child(4) {
+  transform: rotate(-23deg) translateY(-40px);
+  opacity: 0;
+  animation: revealLetter4 1s forwards 2.3s;
+}
+@keyframes revealLetter4 {
+  0% {
+    opacity: 1;
+    transform: rotate(-23deg) translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(-23deg) translateY(30px);
+  }
+}
+#title .lettersTitle:nth-child(5) {
+  transform: rotate(-50deg) translateY(-95px);
+  margin-left: 27px;
+  opacity: 0;
+  animation: revealLetter5 1s forwards 2.4s;
+}
+@keyframes revealLetter5 {
+  0% {
+    opacity: 1;
+    transform: rotate(-50deg) translateY(-95px);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(-50deg) translateY(-25px);
+  }
+}

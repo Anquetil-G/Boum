@@ -1,2 +1,6 @@
 @import url("./reset.css");
+@import url("./fonts/neueMontreal/neueMontreal.css");
+
 @import url("./style.css");
+
+@import url("./title.css");
