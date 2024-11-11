@@ -3,4 +3,6 @@
 
 @import url("./style.css");
 
+@import url("./entranceAnimation.css");
 @import url("./title.css");
+@import url("./presentation.css");
